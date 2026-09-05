@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://localhost:5173", "https://test-case-generator-5ln2.onrender.com/")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
